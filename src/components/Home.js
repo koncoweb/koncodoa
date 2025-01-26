@@ -16,7 +16,7 @@ const Home = () => {
             <p style={{ fontSize: '1rem', marginBottom: '24px' }}>
                 <ul>
                     <li>Belajar buat aplikasi tanpa koding dari REST API pakai AI : <a href="https://www.youtube.com/@mohmbilly" style={{ color: '#007bff', textDecoration: 'underline' }}>YouTube Link</a></li>
-                    <li>KoncoDoa adalah API untuk keperluan pengembangan aplikasi muslim yang kami kembangkan dari Muslimify (<a href="https://github.com/gufronnakaaw/muslimify-api" style={{ color: '#007bff', textDecoration: 'underline' }}>GitHub Link</a>), silahkan pakai dengan menyertakan sumber.</li>
+                    <li>KoncoDoa adalah API untuk keperluan pengembangan aplikasi muslim yang kami kembangkan follow developer Koncoweb (<a href="https://github.com/koncoweb" style={{ color: '#007bff', textDecoration: 'underline' }}>GitHub Link</a>), silahkan pakai dengan menyertakan sumber.</li>
                 </ul>
             </p>
             {/* Existing Random Prayer Card */}
