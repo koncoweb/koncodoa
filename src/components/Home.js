@@ -28,23 +28,35 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-4">
                 <div
                     style={{ padding: '24px', marginBottom: '24px' }}
-                    className="border border-gray-300 rounded-lg shadow-md bg-gray-50 cursor-pointer"
+                    className="border border-gray-300 rounded-lg shadow-md bg-gray-50 cursor-pointer max-w-[45%]"
                     onClick={() => window.open('../data/doaharian/doaharian.json', '_blank')}
                 >
-                    <h3 className="text-xl font-semibold">Doa Harian</h3>
+                    <h3 className="text-xl font-semibold">API Doa Harian</h3>
                     <p className="text-gray-700">Doa harian dalam bentuk json</p>
                 </div>
-                <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md bg-gray-50 cursor-pointer">
-                    <h3 className="text-xl font-semibold">Card 2</h3>
-                    <p className="text-gray-700">Description for Card 2</p>
+                <div
+                    style={{ padding: '24px', marginBottom: '24px' }}
+                    className="border border-gray-300 rounded-lg shadow-md bg-gray-50 cursor-pointer max-w-[45%]"
+                    onClick={() => window.open('../data/asmaulhusna/asmaulhusna.json', '_blank')}
+                >
+                    <h3 className="text-xl font-semibold">API Asmaul Husna</h3>
+                    <p className="text-gray-700">Asmaul Husna dalam bentuk json</p>
                 </div>
-                <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md bg-gray-50 cursor-pointer">
-                    <h3 className="text-xl font-semibold">Card 3</h3>
-                    <p className="text-gray-700">Description for Card 3</p>
+                <div
+                    style={{ padding: '24px', marginBottom: '24px' }}
+                    className="border border-gray-300 rounded-lg shadow-md bg-gray-50 cursor-pointer max-w-[45%]"
+                    onClick={() => window.open('../data/quotes/quotes.json', '_blank')}
+                >
+                    <h3 className="text-xl font-semibold">API Quran Quotes</h3>
+                    <p className="text-gray-700">Quotes Al Quran dalam bentuk json</p>
                 </div>
-                <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md bg-gray-50 cursor-pointer">
-                    <h3 className="text-xl font-semibold">Card 4</h3>
-                    <p className="text-gray-700">Description for Card 4</p>
+                <div
+                    style={{ padding: '24px', marginBottom: '24px' }}
+                    className="border border-gray-300 rounded-lg shadow-md bg-gray-50 cursor-pointer max-w-[45%]"
+                    onClick={() => window.open('../data/niatshalat/all.json', '_blank')}
+                >
+                    <h3 className="text-xl font-semibold">API Niat Shalat</h3>
+                    <p className="text-gray-700">Niat Shalat dalam bentuk json</p>
                 </div>
             </div>
         </div>
