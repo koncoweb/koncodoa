@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Removed conflicting styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: #343a40; /* Darker text for headings */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+li {
+    margin: 24px; /* Add margin */
+    padding: 24px; /* Add padding */
+}
+
+li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}
+
+@media (max-width: 600px) {
+    li {
+        padding: 16px;
+        margin: 16px;
+    }
+}

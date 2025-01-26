@@ -1,29 +1,29 @@
 // PrayerDetail.js
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useState } from 'react';
+import localData from '../data/doaharian/doaharian.json';
+import '../styles.css';
 
-function PrayerDetail() {
-    const { id, doa } = useParams();
-    const [prayer, setPrayer] = useState(null);
-
-    useEffect(() => {
-        const fetchPrayer = async () => {
-            const response = await fetch(`https://doa-doa-api-ahmadramadhan.fly.dev/api${id ? `/${id}` : `/doa/${doa}`}`);
-            const data = await response.json();
-            setPrayer(data);
-        };
-
-        fetchPrayer();
-    }, [id, doa]);
-
-    if (!prayer) return <div>Loading...</div>;
+const PrayerDetail = () => {
+    const [data, setData] = useState(localData);
 
     return (
         <div>
-            <h1>{prayer.title}</h1>
-            <p>{prayer.content}</p>
+            {data ? (
+                <ul>
+                    {data.map(prayer => (
+                        <li key={prayer.number}>
+                            <h3>{prayer.name} (#{prayer.number})</h3>
+                            <p><strong>Arabic:</strong> {prayer.arabic}</p>
+                            <p><strong>Latin:</strong> {prayer.latin}</p>
+                            <p><strong>Translation:</strong> {prayer.translation}</p>
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p>Loading...</p>
+            )}
         </div>
     );
-}
+};
 
 export default PrayerDetail;

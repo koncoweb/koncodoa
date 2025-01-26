@@ -1,45 +1,28 @@
-// Home.js
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// Starting fresh for Home.js
 
-function Home() {
-    const [prayers, setPrayers] = useState([]);
-    const [error, setError] = useState(null);
+import React from 'react';
+import doaharian from '../data/doaharian/doaharian.json';
+import asmaulhusna from '../data/asmaulhusna/asmaulhusna.json';
 
-    useEffect(() => {
-        const fetchPrayers = async () => {
-            try {
-                const response = await fetch('https://doa-doa-api-ahmadramadhan.fly.dev/api');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setPrayers(data);
-            } catch (error) {
-                console.error('Failed to fetch prayers:', error);
-                setError(error.message);
-            }
-        };
-
-        fetchPrayers();
-    }, []);
-
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
+const Home = () => {
+    const randomPrayer = doaharian[Math.floor(Math.random() * doaharian.length)];
+    const randomAsmaulHusna = asmaulhusna[Math.floor(Math.random() * asmaulhusna.length)];
 
     return (
-        <div>
-            <h1>Doa Harian Muslim</h1>
-            <ul>
-                {prayers.map((prayer) => (
-                    <li key={prayer.id}>
-                        <Link to={`/api/${prayer.id}`}>{prayer.title}</Link>
-                    </li>
-                ))}
-            </ul>
+        <div className="container mx-auto p-4 sm:p-6 lg:p-8">
+            <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold">Doa Hari ini</h3>
+                <p className="text-gray-700">{randomPrayer.name}</p>
+                <p className="text-gray-700">{randomPrayer.translation}</p>
+            </div>
+            <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold">Asmaul Husna</h3>
+                <p className="text-gray-700">{randomAsmaulHusna.latin}</p>
+                <p className="text-gray-700">{randomAsmaulHusna.id_translation}</p>
+            </div>
+            {/* New content goes here */}
         </div>
     );
-}
+};
 
 export default Home;
