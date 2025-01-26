@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 // Set SEO tags
 const title = 'KoncoDoa : API Islami dari Koncoweb';
-const description = 'KoncoDoa adalah API untuk keperluan pengembangan aplikasi muslim yang kami kembangkan dari Muslimify.';
+const description = '1. belajar buat aplikasi dari REST API pakai AI : https://www.youtube.com/@mohmbilly \n\n2. KoncoDoa adalah API untuk keperluan pengembangan aplikasi muslim yang kami kembangkan dari Muslimify ( https://github.com/gufronnakaaw/muslimify-api ), silahkan pakai dengan menyertakan sumber.';
 
 // Create a function to set the title and meta description
 function setSEO() {
