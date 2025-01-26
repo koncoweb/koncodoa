@@ -26,9 +26,13 @@ const Home = () => {
 
             {/* New Menu of Clickable Cards */}
             <div className="grid grid-cols-2 gap-4">
-                <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-200 rounded-lg shadow-sm bg-gray-50 cursor-pointer">
-                    <h3 className="text-xl font-semibold">Card 1</h3>
-                    <p className="text-gray-700">Description for Card 1</p>
+                <div
+                    style={{ padding: '24px', marginBottom: '24px' }}
+                    className="border border-gray-200 rounded-lg shadow-sm bg-gray-50 cursor-pointer"
+                    onClick={() => window.open('../data/doaharian/doaharian.json', '_blank')}
+                >
+                    <h3 className="text-xl font-semibold">Doa Harian</h3>
+                    <p className="text-gray-700">Doa harian dalam bentuk json</p>
                 </div>
                 <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-200 rounded-lg shadow-sm bg-gray-50 cursor-pointer">
                     <h3 className="text-xl font-semibold">Card 2</h3>
