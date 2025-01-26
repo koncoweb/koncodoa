@@ -25,20 +25,20 @@ const Home = () => {
             </div>
 
             {/* New Menu of Clickable Cards */}
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                <div className="border border-gray-300 rounded-lg shadow-md bg-[#4EDD7A] cursor-pointer p-6">
+            <div className="grid grid-cols-2 gap-4">
+                <div className="border border-gray-300 rounded-lg shadow-md bg-[#4EDD7A] cursor-pointer p-6" onClick={() => window.open('../data/doaharian/doaharian.json', '_blank')}> 
                     <h3 className="text-xl font-semibold text-white">API Doa Harian</h3>
                     <p className="text-gray-700">Doa harian dalam bentuk json</p>
                 </div>
-                <div className="border border-gray-300 rounded-lg shadow-md bg-[#B3E6A0] cursor-pointer p-6">
+                <div className="border border-gray-300 rounded-lg shadow-md bg-[#B3E6A0] cursor-pointer p-6" onClick={() => window.open('../data/asmaulhusna/asmaulhusna.json', '_blank')}> 
                     <h3 className="text-xl font-semibold text-white">API Asmaul Husna</h3>
                     <p className="text-gray-700">Asmaul Husna dalam bentuk json</p>
                 </div>
-                <div className="border border-gray-300 rounded-lg shadow-md bg-[#D4EDB9] cursor-pointer p-6">
+                <div className="border border-gray-300 rounded-lg shadow-md bg-[#D4EDB9] cursor-pointer p-6" onClick={() => window.open('../data/quotes/quotes.json', '_blank')}> 
                     <h3 className="text-xl font-semibold text-white">API Quran Quotes</h3>
                     <p className="text-gray-700">Quotes Al Quran dalam bentuk json</p>
                 </div>
-                <div className="border border-gray-300 rounded-lg shadow-md bg-[#E8F5E9] cursor-pointer p-6">
+                <div className="border border-gray-300 rounded-lg shadow-md bg-[#E8F5E9] cursor-pointer p-6" onClick={() => window.open('../data/niatshalat/all.json', '_blank')}> 
                     <h3 className="text-xl font-semibold text-white">API Niat Shalat</h3>
                     <p className="text-gray-700">Niat Shalat dalam bentuk json</p>
                 </div>
