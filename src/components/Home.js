@@ -27,20 +27,20 @@ const Home = () => {
             {/* New Menu of Clickable Cards */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
                 <div style={{ border: '1px solid #D1D5DB', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: '#4EDD7A', cursor: 'pointer', padding: '24px' }} onClick={() => window.open('../data/doaharian/doaharian.json', '_blank')}>
-                    <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#ffffff' }}>API Doa Harian</h3>
-                    <p style={{ color: '#ffffff' }}>Doa harian dalam bentuk json</p>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#000000' }}>API Doa Harian</h3>
+                    <p style={{ color: '#000000' }}>Doa harian dalam bentuk json</p>
                 </div>
                 <div style={{ border: '1px solid #D1D5DB', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: '#B3E6A0', cursor: 'pointer', padding: '24px' }} onClick={() => window.open('../data/asmaulhusna/asmaulhusna.json', '_blank')}>
-                    <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#ffffff' }}>API Asmaul Husna</h3>
-                    <p style={{ color: '#ffffff' }}>Asmaul Husna dalam bentuk json</p>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#000000' }}>API Asmaul Husna</h3>
+                    <p style={{ color: '#000000' }}>Asmaul Husna dalam bentuk json</p>
                 </div>
                 <div style={{ border: '1px solid #D1D5DB', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: '#D4EDB9', cursor: 'pointer', padding: '24px' }} onClick={() => window.open('../data/quotes/quotes.json', '_blank')}>
-                    <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#ffffff' }}>API Quran Quotes</h3>
-                    <p style={{ color: '#ffffff' }}>Quotes Al Quran dalam bentuk json</p>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#000000' }}>API Quran Quotes</h3>
+                    <p style={{ color: '#000000' }}>Quotes Al Quran dalam bentuk json</p>
                 </div>
                 <div style={{ border: '1px solid #D1D5DB', borderRadius: '8px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', backgroundColor: '#E8F5E9', cursor: 'pointer', padding: '24px' }} onClick={() => window.open('../data/niatshalat/all.json', '_blank')}>
-                    <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#ffffff' }}>API Niat Shalat</h3>
-                    <p style={{ color: '#ffffff' }}>Niat Shalat dalam bentuk json</p>
+                    <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#000000' }}>API Niat Shalat</h3>
+                    <p style={{ color: '#000000' }}>Niat Shalat dalam bentuk json</p>
                 </div>
             </div>
         </div>
