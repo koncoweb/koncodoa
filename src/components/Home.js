@@ -11,14 +11,14 @@ const Home = () => {
     return (
         <div className="container mx-auto p-4 sm:p-6 lg:p-8">
             {/* Existing Random Prayer Card */}
-            <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md">
+            <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md bg-gray-50">
                 <h3 className="text-xl font-semibold">Doa Hari ini</h3>
                 <p className="text-gray-700">{randomPrayer.name}</p>
                 <p className="text-gray-700">{randomPrayer.translation}</p>
             </div>
 
             {/* Existing Asmaul Husna Card */}
-            <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md">
+            <div style={{ padding: '24px', marginBottom: '24px' }} className="border border-gray-300 rounded-lg shadow-md bg-gray-50">
                 <h3 className="text-xl font-semibold">Asmaul Husna</h3>
                 <p className="text-gray-700">{randomAsmaulHusna.latin}</p>
                 <p className="text-gray-700">{randomAsmaulHusna.id_translation}</p>
