@@ -4,6 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Set SEO tags
+const title = 'KoncoDoa : API Islami dari Koncoweb';
+const description = 'KoncoDoa adalah API untuk keperluan pengembangan aplikasi muslim yang kami kembangkan dari Muslimify.';
+
+// Create a function to set the title and meta description
+function setSEO() {
+    document.title = title;
+    const metaDescription = document.createElement('meta');
+    metaDescription.name = 'description';
+    metaDescription.content = description;
+    document.head.appendChild(metaDescription);
+}
+
+setSEO();
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
